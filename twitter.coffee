@@ -6,11 +6,9 @@ hook = new Hook
 
 hook.start()
 
-twit = new Twitter
-  consumer_key: 'n0Ow7JQwaE1rURUqLZEcbQ'
-  consumer_secret: 'pRDuNGiUNt9nFqLCEPfqSF24CsAFonVXMnmgIlnPmI0'
-  access_token_key: '11724792-PPZau9cwa4LYjeiGPlDasbsy707Q0krosxuULisNO'
-  access_token_secret: '676K7gU7ZTXF3ozEthNJJqisa2RHab84AslyUNZFomQ'
+conf = JSON.parse require('fs').readFileSync('twitter.json').toString()
+
+twit = new Twitter conf
 
 twit.stream 'user', (stream) ->
   stream.on 'data', (data) ->
