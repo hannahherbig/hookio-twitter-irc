@@ -1,8 +1,10 @@
 {
+  "name": "who-cares",
+  "version": "0.0.1",
   "dependencies": {
-    "coffee-script": "",
-    "hook.io": "",
-    "hook.io-irc": "",
-    "ntwitter": ""
+    "coffee-script": "*",
+    "hook.io": "*",
+    "hook.io-irc": "*",
+    "ntwitter": "*"
   }
 }
