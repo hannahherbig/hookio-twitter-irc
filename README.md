@@ -7,7 +7,7 @@ connecting to twitter, and posting things from twitter to IRC.
         cd hookio-twitter-irc
         npm install
 
-1.  Create a file called `config.json` for your IRC config. Here's mine.
+2.  Create a file called `config.json` for your IRC config. Here's mine.
 
         {
           "irc-server": "irc.malkier.net",
@@ -17,7 +17,7 @@ connecting to twitter, and posting things from twitter to IRC.
           "userName": "hookio"
         }
 
-2.  Create a file called `twitter.json` for your Twitter config. Create an app 
+3.  Create a file called `twitter.json` for your Twitter config. Create an app 
     at [twitter][] and put your credentials here. Here's a template.
 
         {
@@ -26,6 +26,8 @@ connecting to twitter, and posting things from twitter to IRC.
           "access_token_key": "",
           "access_token_secret": ""
         }
+
+4.  Start it using `foreman start`.
 
 [hook.io]: http://hook.io
 [node]: http://nodejs.org/
