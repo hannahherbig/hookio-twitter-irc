@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "coffee-script": "",
+    "hook.io": "",
+    "hook.io-irc": "",
+    "ntwitter": ""
+  }
+}
